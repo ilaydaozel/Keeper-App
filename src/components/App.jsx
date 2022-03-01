@@ -14,7 +14,7 @@ function createNote(props){
 function App(){
     return(<div>
         <Header />
-        {notes.map(createNote)}
+        {notes.map(props =><Note key={props.id} title={props.title} content={props.content} />)}
         <Footer />
         
     </div>)
