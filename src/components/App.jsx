@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Header from "./Header";
-//import Footer from "./Footer";
+import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
 
@@ -30,8 +30,7 @@ function App() {
       <Header />
       <CreateArea addItem={addNote}/>
       {noteList.map((elm)=>{ return elm })}
-      <Note key={1} title="Note title" content="Note content" />
-      {console.log(noteList)};
+      <Footer />
     </div>
   );
 }

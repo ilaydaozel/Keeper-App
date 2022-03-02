@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-//import Note from "./Notes.jsx";
+
 
 function CreateArea(props) {
   const [newNote, setNewNote] = useState({
@@ -20,6 +20,7 @@ function takeNote(event){
   
   function handleSubmit(event){
       event.preventDefault();
+      setNewNote({title:"", content:""})
   }
  
   
